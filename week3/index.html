@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="container">
+      <header>
+        <h1>TO DO</h1>
+        <div class="profile">
+          <img src="profile.jpg" alt="Profile" class="profile-img" />
+        </div>
+      </header>
+
+      <div class="filter-section">
+        <label for="sort-mode">Filter</label>
+        <select id="sort-mode">
+          <option>Sorting Mode</option>
+        </select>
+      </div>
+
+      <div class="main-section">
+        <div class="todo-section">
+          <h4>3 Tasks</h4>
+          <div class="task-item">
+            <input type="checkbox" id="task1" />
+            <label for="task1">Do Homework</label>
+          </div>
+          <div class="task-item">
+            <input type="checkbox" id="task2" />
+            <label for="task2">Take out the task</label>
+          </div>
+          <div class="task-item">
+            <input type="checkbox" id="task3" />
+            <label for="task3">Clean the room</label>
+          </div>
+        </div>
+
+        <div class="done-section">
+          <h4>DONE</h4>
+          <div class="task-item">
+            <input type="checkbox" id="done1" checked />
+            <label for="done1">Cook Food</label>
+          </div>
+          <div class="task-item">
+            <input type="checkbox" id="done2" checked />
+            <label for="done2">Shopping</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="note-section">
+        <textarea placeholder="Note Here..."></textarea>
+      </div>
+
+      <div class="button-section">
+        <button id="add-task">Add Task</button>
+        <button id="delete-task">Delete task</button>
+      </div>
+    </div>
+  </body>
+</html>
